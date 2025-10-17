@@ -2081,8 +2081,8 @@ body::before {
 }
 
 .organizer-avatar {
-    width: 230px;
-    height: 270px;
+    width: 200px;
+    height: 250px;
     background: linear-gradient(135deg, var(--accent-teal), var(--accent-violet));
     border-radius: 50%;
     margin: 0 auto 20px;
@@ -2107,8 +2107,9 @@ body::before {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: center center;
     border-radius: 50%;
+    display: block;
 }
 
 .organizer-info {
