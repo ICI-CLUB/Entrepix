@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENTREPIX - Where Ideas Ignite</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Rocket Launch Animation Container -->
+    <div id="launch-screen">
+        <div class="stars"></div>
+        <div class="rocket-container">
+            <img src="static/images/icons/for anime2.png" alt="ENTREPIX Rocket" class="rocket-logo">
+            <div class="smoke-trail trail-1"></div>
+            <div class="smoke-trail trail-2"></div>
+            <div class="smoke-trail trail-3"></div>
+            <div class="sparkles"></div>
+        </div>
+    </div>
+
+    <!-- Main Website Content -->
+    <div id="main-content" class="hidden">
+        <!-- Navigation Bar -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-logo">
+                <span class="logo-text">ENTREPIX</span>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#rules" class="nav-link">Rules</a></li>
+                <li class="nav-item"><a href="#tracks" class="nav-link">Tracks</a></li>
+                <li class="nav-item"><a href="#evaluation" class="nav-link">Evaluation</a></li>
+                <li class="nav-item"><a href="#partners" class="nav-link">Affiliations</a></li>
+                <li class="nav-item"><a href="#organizers" class="nav-link">Organizers</a></li>
+                <li class="nav-item"><a href="#registration" class="nav-link register-btn">🔗 Register</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Floating Particles -->
+        <div class="particles" id="particles"></div>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="letter">E</span>
+                    <span class="letter">N</span>
+                    <span class="letter">T</span>
+                    <span class="letter">R</span>
+                    <span class="letter">E</span>
+                    <span class="letter">P</span>
+                    <span class="letter">I</span>
+                    <span class="letter">X</span>
+                </h1>
+                <p class="hero-tagline">Where Ideas Ignite</p>
+                
+                <p class="hero-description">
+                    Join us for an extraordinary journey of innovation and entrepreneurship. 
+                    Transform your ideas into reality at the premier Ideathon & Entrepreneurship Event.
+                </p>
+
+                <!-- Event Info Banner -->
+                <div class="event-info-banner">
+                    <div class="event-info-item">
+                        <span class="info-icon">📅</span>
+                        <div class="info-content">
+                            <span class="info-label">Date</span>
+                            <span class="info-value">October 25, 2025</span>
+                        </div>
+                    </div>
+                    <div class="event-info-item">
+                        <span class="info-icon">⏰</span>
+                        <div class="info-content">
+                            <span class="info-label">Time</span>
+                            <span class="info-value">9:00 AM - 5:00 PM</span>
+                        </div>
+                    </div>
+                    <div class="event-info-item">
+                        <span class="info-icon">📍</span>
+                        <div class="info-content">
+                            <span class="info-label">Venue</span>
+                            <span class="info-value">Conference Hall 3 & 4, APJ Block</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Countdown Timer -->
+                <div class="countdown-container">
+                    <h3 class="countdown-title">Event Starts In</h3>
+                    <div class="countdown-timer">
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="days">00</span>
+                            <span class="countdown-label">DAYS</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="hours">00</span>
+                            <span class="countdown-label">HOURS</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="minutes">00</span>
+                            <span class="countdown-label">MINUTES</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-value" id="seconds">00</span>
+                            <span class="countdown-label">SECONDS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#registration" class="cta-button cta-live">
+                    <span class="live-indicator">🔴</span>
+                    <span>REGISTRATION LIVE - Register Now</span>
+                    <div class="button-glow"></div>
+                </a>
+            </div>
+            <div class="hero-animation">
+                <div class="orbit-container">
+                    <img src="static/images/icons/main_logo.jpeg" alt="ENTREPIX Logo" class="hero-orbit-logo">
+                    <div class="orbit orbit-1"></div>
+                    <div class="orbit orbit-2"></div>
+                    <div class="orbit orbit-3"></div>
+                    <div class="central-spark"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">About ENTREPIX 2025</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            <strong>ENTREPIX 2025</strong> is a premier innovation and entrepreneurship event organized by the 
+                            <strong>Sustainable Engineers Club</strong> at <strong>M.Kumarasamy College of Engineering</strong>. 
+                            This event aims to foster creativity, innovation, and entrepreneurial spirit among students, 
+                            providing them with a platform to showcase their innovative ideas focused on 
+                            <strong>Sustainable Development</strong> and transform them into viable business solutions.
+                        </p>
+                        <p>
+                            Join us for an exciting day of idea pitching, mentorship, and networking opportunities. 
+                            Whether you're passionate about sustainable construction, green building technologies, 
+                            eco-friendly infrastructure, renewable energy, or any innovative solution promoting sustainability, 
+                            this is your chance to shine and make a real impact on our planet's future!
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <span class="highlight-icon">💡</span>
+                                <h4>Innovation</h4>
+                                <p>Transform creative ideas into reality</p>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-icon">🤝</span>
+                                <h4>Collaboration</h4>
+                                <p>Network with like-minded innovators</p>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-icon">🏆</span>
+                                <h4>Recognition</h4>
+                                <p>Win exciting prizes and awards</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-icon">📝</div>
+                            <div class="timeline-content">
+                                <h3>Registration & Submission</h3>
+                                <p>Before October 23, 2025</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">🎤</div>
+                            <div class="timeline-content">
+                                <h3>Morning Presentations</h3>
+                                <p>9:00 AM - 3:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">🔍</div>
+                            <div class="timeline-content">
+                                <h3>Afternoon Shortlisting</h3>
+                                <p>3:00 PM - 4:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-icon">🏆</div>
+                            <div class="timeline-content">
+                                <h3>Awards Ceremony</h3>
+                                <p>4:00 PM - 5:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rules & Guidelines Section -->
+        <section id="rules" class="section rules-section">
+            <div class="container">
+                <h2 class="section-title">📜 Rules & Guidelines</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Eligibility Criteria</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>• Open to students, professionals, and entrepreneurs</p>
+                            <p>• Individual participants or teams of 3-4 members</p>
+                            <p>• Must be 18 years or older</p>
+                            <p>• Previous winners of major competitions may have restrictions</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Team Composition</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>• Teams can consist of 1-4 members</p>
+                            <p>• Cross-functional teams are encouraged</p>
+                            <p>• Team leader must be designated for communication</p>
+                            <p>• Team changes after registration require approval</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Idea Submission Format</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>• Executive summary (max 500 words)</p>
+                            <p>• Problem statement and solution approach</p>
+                            <p>• Market analysis and target audience</p>
+                            <p>• Implementation roadmap</p>
+                            <p>• Optional: Prototype/demo video (max 3 minutes)</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Code of Conduct</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>• Original ideas only - plagiarism will result in disqualification</p>
+                            <p>• Respectful behavior towards all participants and organizers</p>
+                            <p>• Adherence to scheduled timelines</p>
+                            <p>• Professional communication during all event phases</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h3>Important Dates</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>• Registration Deadline: October 23, 2025</p>
+                            <p>• Idea Submission Deadline: October 23, 2025</p>
+                            <p>• Screening Results: October 25, 2025</p>
+                            <p>• Final Pitching Event: October 25, 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Tracks Section -->
+        <section id="tracks" class="section tracks-section">
+            <div class="container">
+                <h2 class="section-title">💡 Event Tracks</h2>
+                <div class="tracks-grid">
+                    <div class="track-card">
+                        <div class="track-icon">♻️</div>
+                        <h3>Smart E-Waste Management Systems</h3>
+                        <p class="track-subtitle">Innovative Engineering Solutions for E-Waste Recycling and Circular Electronics</p>
+                        <p>Develop cutting-edge solutions for electronic waste management, leveraging AI, IoT, and blockchain technologies to create a sustainable circular economy for electronics.</p>
+                        <div class="track-focus">
+                            <strong>Focus Areas:</strong>
+                            <ul>
+                                <li>Automated e-waste collection and sorting systems</li>
+                                <li>AI/IoT-based tracking of electronic product lifecycles</li>
+                                <li>Eco-friendly material recovery and recycling processes</li>
+                                <li>Mobile applications for e-waste collection and consumer awareness</li>
+                                <li>Blockchain-based e-waste accountability systems</li>
+                            </ul>
+                        </div>
+                        <div class="track-glow"></div>
+                    </div>
+                    <div class="track-card">
+                        <div class="track-icon">⚡</div>
+                        <h3>Intelligent Energy Management and Optimization</h3>
+                        <p class="track-subtitle">Energy Efficiency and Smart Grid Innovations for Sustainable Power Systems</p>
+                        <p>Create smart, efficient energy solutions using AI and IoT to optimize power consumption, integrate renewable energy, and build sustainable grid infrastructure.</p>
+                        <div class="track-focus">
+                            <strong>Focus Areas:</strong>
+                            <ul>
+                                <li>AI-driven smart grids and load balancing</li>
+                                <li>IoT-based monitoring in high-consumption zones (campuses, industries)</li>
+                                <li>Renewable energy integration and storage optimization</li>
+                                <li>Predictive maintenance for power infrastructure</li>
+                                <li>Energy dashboards for real-time analytics and sustainability tracking</li>
+                            </ul>
+                        </div>
+                        <div class="track-glow"></div>
+                    </div>
+                    <div class="track-card">
+                        <div class="track-icon">�</div>
+                        <h3>Circular Economy and Industrial Symbiosis</h3>
+                        <p class="track-subtitle">Engineering Circular Economies: Turning Waste into Wealth</p>
+                        <p>Design innovative platforms and models that transform industrial waste into valuable resources, fostering collaboration between industries for maximum sustainability.</p>
+                        <div class="track-focus">
+                            <strong>Focus Areas:</strong>
+                            <ul>
+                                <li>Digital platforms connecting waste producers to resource seekers</li>
+                                <li>Industrial symbiosis models (inter-company resource sharing)</li>
+                                <li>Sustainable product lifecycle design and material reuse</li>
+                                <li>Smart logistics for waste/resource redistribution</li>
+                                <li>Policy and data-driven sustainability frameworks</li>
+                            </ul>
+                        </div>
+                        <div class="track-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Evaluation Criteria Section -->
+        <section id="evaluation" class="section evaluation-section">
+            <div class="container">
+                <h2 class="section-title">⚖️ Evaluation Criteria</h2>
+                <p class="section-subtitle">Your ideas will be judged on the following parameters:</p>
+                <div class="criteria-container">
+                    <div class="criteria-item">
+                        <div class="criteria-circle">
+                            <svg class="criteria-svg" viewBox="0 0 200 200">
+                                <circle class="criteria-bg" cx="100" cy="100" r="90"></circle>
+                                <circle class="criteria-progress" cx="100" cy="100" r="90" data-percentage="30"></circle>
+                            </svg>
+                            <div class="criteria-text">
+                                <span class="criteria-value">30%</span>
+                            </div>
+                        </div>
+                        <h3>Innovation</h3>
+                        <p>Originality and creativity of the concept</p>
+                    </div>
+                    <div class="criteria-item">
+                        <div class="criteria-circle">
+                            <svg class="criteria-svg" viewBox="0 0 200 200">
+                                <circle class="criteria-bg" cx="100" cy="100" r="90"></circle>
+                                <circle class="criteria-progress" cx="100" cy="100" r="90" data-percentage="25"></circle>
+                            </svg>
+                            <div class="criteria-text">
+                                <span class="criteria-value">25%</span>
+                            </div>
+                        </div>
+                        <h3>Feasibility</h3>
+                        <p>Practicality and implementation potential</p>
+                    </div>
+                    <div class="criteria-item">
+                        <div class="criteria-circle">
+                            <svg class="criteria-svg" viewBox="0 0 200 200">
+                                <circle class="criteria-bg" cx="100" cy="100" r="90"></circle>
+                                <circle class="criteria-progress" cx="100" cy="100" r="90" data-percentage="20"></circle>
+                            </svg>
+                            <div class="criteria-text">
+                                <span class="criteria-value">20%</span>
+                            </div>
+                        </div>
+                        <h3>Presentation</h3>
+                        <p>Clarity and quality of pitch delivery</p>
+                    </div>
+                    <div class="criteria-item">
+                        <div class="criteria-circle">
+                            <svg class="criteria-svg" viewBox="0 0 200 200">
+                                <circle class="criteria-bg" cx="100" cy="100" r="90"></circle>
+                                <circle class="criteria-progress" cx="100" cy="100" r="90" data-percentage="15"></circle>
+                            </svg>
+                            <div class="criteria-text">
+                                <span class="criteria-value">15%</span>
+                            </div>
+                        </div>
+                        <h3>Sustainability</h3>
+                        <p>Environmental and social impact</p>
+                    </div>
+                    <div class="criteria-item">
+                        <div class="criteria-circle">
+                            <svg class="criteria-svg" viewBox="0 0 200 200">
+                                <circle class="criteria-bg" cx="100" cy="100" r="90"></circle>
+                                <circle class="criteria-progress" cx="100" cy="100" r="90" data-percentage="10"></circle>
+                            </svg>
+                            <div class="criteria-text">
+                                <span class="criteria-value">10%</span>
+                            </div>
+                        </div>
+                        <h3>Market Value</h3>
+                        <p>Commercial viability and scalability</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners & Sponsors Section -->
+        <section id="partners" class="section partners-section">
+            <div class="container">
+                <h2 class="section-title">Our Proud Associations</h2>
+                <p class="section-subtitle">Inspiring Innovation Together</p>
+                <div class="partners-carousel">
+                    <div class="carousel-track">
+                        <div class="partner-logo">
+                            <img src="static/images/icons/ICI.png" alt="Indian Concrete Institute">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="static/images/icons/clg_logo.png" alt="M.Kumarasamy College of Engineering">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="static/images/icons/clgnamelogo.png" alt="MKCE">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="static/images/icons/arora.png" alt="Arora">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="static/images/icons/Ranking.png" alt="ENTREPIX">
+                        </div>
+                        <!-- Duplicate for seamless loop -->
+                        <div class="partner-logo">
+                            <img src="static/images/icons/ICI.png" alt="Indian Concrete Institute">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="static/images/icons/clg_logo.png" alt="M.Kumarasamy College of Engineering">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="static/images/icons/clgnamelogo.png" alt="MKCE">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="static/images/icons/arora.png" alt="Arora">
+                        </div>
+                        <div class="partner-logo">
+                            <img src="static/images/icons/Ranking.png" alt="RANKING">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Organizers Section -->
+        <section id="organizers" class="section organizers-section">
+            <div class="container">
+                <h2 class="section-title">👥 Meet the Organizers</h2>
+                <h3 class="subsection-title">Faculty Coordinators</h3>
+                <div class="organizers-grid">
+                    <div class="organizer-card">
+                        <div class="organizer-avatar">
+                            <span>👨‍🏫</span>
+                        </div>
+                        <div class="organizer-info">
+                            <h4>Dr. P. Balamurugan</h4>
+                            <p class="role">Faculty Coordinator</p>
+                            <div class="social-links">
+                                <a href="tel:+919865805252" class="social-icon" title="+91 98658 05252">📞</a>
+                                <a href="mailto:balamurugan.p@mkce.ac.in" class="social-icon" title="balamurugan.p@mkce.ac.in">📧</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">Student Coordinators</h3>
+                <div class="organizers-grid">
+                    <div class="organizer-card">
+                        <div class="organizer-avatar">
+                            <span>👨‍🎓</span>
+                        </div>
+                        <div class="organizer-info">
+                            <h4>S.J. Jeevanantham</h4>
+                            <p class="role">President</p>
+                            <div class="social-links">
+                                <a href="tel:+919962531002" class="social-icon" title="+91 99625 31002">📞</a>
+                                <a href="mailto:jeevaselvaraj1981@gmail.com" class="social-icon" title="jeevanantham.22cse@mkce.ac.in">📧</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="organizer-card">
+                        <div class="organizer-avatar">
+                            <span>👨‍🎓</span>
+                        </div>
+                        <div class="organizer-info">
+                            <h4>Ruthuvarshan</h4>
+                            <p class="role">Vice President</p>
+                            <div class="social-links">
+                                <a href="tel:+916379333049" class="social-icon" title="+91 6379 333 049">📞</a>
+                                <a href="mailto:ruthuvarshan.22cse@mkce.ac.in" class="social-icon" title="ruthuvarshan.22cse@mkce.ac.in">📧</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="organizer-card">
+                        <div class="organizer-avatar">
+                            <span>👨‍🎓</span>
+                        </div>
+                        <div class="organizer-info">
+                            <h4>Jai Narendiran</h4>
+                            <p class="role">Secretary</p>
+                            <div class="social-links">
+                                <a href="tel:+916381689440" class="social-icon" title="+91 6381 689 440">📞</a>
+                                <a href="mailto:jainarendiran.22cse@mkce.ac.in" class="social-icon" title="jainarendiran.22cse@mkce.ac.in">📧</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="organizer-card">
+                        <div class="organizer-avatar">
+                            <span>👨‍🎓</span>
+                        </div>
+                        <div class="organizer-info">
+                            <h4>Harish Pranav S</h4>
+                            <p class="role">Treasurer</p>
+                            <div class="social-links">
+                                <a href="tel:+917845693765" class="social-icon" title="+91 7845 693 765">📞</a>
+                                <a href="mailto:harishpranavs259@gmail.com" class="social-icon" title="harishpranav.22cse@mkce.ac.in">📧</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="organizer-card">
+                        <div class="organizer-avatar">
+                            <span>👨‍🎓</span>
+                        </div>
+                        <div class="organizer-info">
+                            <h4>A. Heman</h4>
+                            <p class="role">Event Coordinator 1</p>
+                            <div class="social-links">
+                                <a href="tel:+917695811058" class="social-icon" title="+91 76958 11058">📞</a>
+                                <a href="mailto:heman.22cse@mkce.ac.in" class="social-icon" title="heman.22cse@mkce.ac.in">📧</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="organizer-card">
+                        <div class="organizer-avatar">
+                            <span>👨‍🎓</span>
+                        </div>
+                        <div class="organizer-info">
+                            <h4>M. Nagaraj</h4>
+                            <p class="role">Event Coordinator 2</p>
+                            <div class="social-links">
+                                <a href="tel:+918667585449" class="social-icon" title="+91 86675 85449">📞</a>
+                                <a href="mailto:nagaraj.22cse@mkce.ac.in" class="social-icon" title="nagaraj.22cse@mkce.ac.in">📧</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Section -->
+        <section id="registration" class="section registration-section">
+            <div class="container">
+                <h2 class="section-title">🔗 Registration</h2>
+                <div class="registration-content">
+                    <div class="registration-info">
+                        <h3>Don't Miss Out!</h3>
+                        <p>Secure your spot at Entrepix 2025. Registration is free and open to all students passionate about sustainable development.</p>
+                        
+                        <div class="event-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <div>
+                                    <strong>Venue:</strong>
+                                    <p>Conference Hall 3 & 4, APJ Block</p>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <div>
+                                    <strong>Event Date:</strong>
+                                    <p>October 25, 2025 | 9:00 AM - 5:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1iB7JWy1JaH-HyMmo7MJHjWjZsi5RKVu715bNj1WXSgWQAA/viewform?pli=1" target="_blank" rel="noopener noreferrer" class="register-button-main">
+                            <span class="button-icon">👥</span>
+                            <span>Register Now</span>
+                        </a>
+
+                        <a href="static/images/entrepix_broucher.pdf" download class="download-button">
+                            <span class="button-icon">📥</span>
+                            <span>Download Brochure</span>
+                        </a>
+                    </div>
+                    
+                    <div class="registration-qr-container">
+                        <div class="qr-card">
+                            <h4>Quick Registration</h4>
+                            <div class="qr-code-wrapper">
+                                <img src="static\images\icons\registrationQR.png" alt="Registration QR Code" class="qr-code-image">
+                            </div>
+                            <h5>Scan to Register</h5>
+                            <p class="qr-link-text">or <a href="https://docs.google.com/forms/d/e/1FAIpQLSc1iB7JWy1JaH-HyMmo7MJHjWjZsi5RKVu715bNj1WXSgWQAA/viewform?pli=1" target="_blank" rel="noopener noreferrer">click here to register</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">📩 Get in Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:entrepix@ici.org">entrepix.ici@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+91 99625 31002">+91 99625 31002</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <h4>Location</h4>
+                                <p>M KUMARASAMY COLLEGE OF ENGINEERING <br>Sustainable Engineering Club</p>
+                            </div>
+                        </div>
+                        <div class="social-media">
+                            <h4>Follow Us</h4>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/profile.php" target="_blank" rel="noopener noreferrer" class="social-link" title="Facebook">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.linkedin.com/company/m.kumarasamy-college-of-engineering-karur" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://mkce.ac.in/" target="_blank" rel="noopener noreferrer" class="social-link" title="Website">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm9.5 12c0 1.232-.234 2.41-.662 3.492l-5.432-5.432c-.316-.316-.737-.492-1.179-.492h-2.636l1.5-1.5c.586-.586.586-1.536 0-2.121-.586-.586-1.536-.586-2.121 0l-4.243 4.243c-.586.585-.586 1.535 0 2.121l4.243 4.243c.293.293.677.439 1.061.439s.768-.146 1.061-.439c.586-.586.586-1.536 0-2.121l-1.5-1.5h2.636c1.326 0 2.598-.517 3.545-1.464l3.889-3.889c1.037 1.616 1.638 3.537 1.638 5.614zM12 2.5c1.989 0 3.816.651 5.296 1.75l-3.633 3.633c-.316-.158-.669-.25-1.045-.25h-2.636l-.439-.439c-1.367-1.367-3.583-1.367-4.95 0-1.367 1.367-1.367 3.583 0 4.95l.439.439v2.636c0 .376.092.729.25 1.045L2.75 17.296C1.651 15.816 1 13.989 1 12 1 6.201 5.701 1.5 12 1.5c.334 0 .663.02.988.056-.329.14-.642.319-.925.602z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/ICI-CLUB" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Send us a Message</h3>
+                        <form id="contactForm" action="mailto:entrepix.ici@gmail.com" method="POST" enctype="text/plain">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-button">
+                                <span>Send Message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>ENTREPIX</h3>
+                        <p>Where Ideas Ignite</p>
+                        <p class="footer-tagline">Organized by Indian Concrete Institute - Sustainable Engineering Club</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#rules">Rules</a></li>
+                            <li><a href="#registration">Register</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:jeevaselvaraj1981@gmail.com">jeevaselvaraj1981@gmail.com</a></li>
+                            <li><a href="tel:+91 99625 31002">+91 99625 31002</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 ENTREPIX. All rights reserved.</p>
+                    <p>Crafted with 💡 by the ICI Tech Team</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
