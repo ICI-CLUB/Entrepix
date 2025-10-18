@@ -1123,6 +1123,39 @@ body::before {
     animation: fadeInUp 1s 4.1s forwards;
 }
 
+.highlight-event {
+    background: linear-gradient(135deg, var(--accent-teal), var(--accent-violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    font-size: 19px;
+    position: relative;
+    display: inline-block;
+    text-shadow: 0 0 20px rgba(0, 245, 212, 0.5),
+                 0 0 30px rgba(155, 93, 229, 0.3),
+                 0 0 40px rgba(0, 245, 212, 0.2);
+    filter: drop-shadow(0 0 10px rgba(0, 245, 212, 0.4))
+            drop-shadow(0 0 20px rgba(155, 93, 229, 0.3));
+}
+
+.highlight-event::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, var(--accent-teal), var(--accent-violet), var(--accent-orange));
+    border-radius: 1px;
+    animation: shimmerUnderline 3s ease-in-out infinite;
+}
+
+@keyframes shimmerUnderline {
+    0%, 100% { opacity: 0.6; transform: scaleX(1); }
+    50% { opacity: 1; transform: scaleX(1.05); }
+}
+
 /* Event Info Banner */
 .event-info-banner {
     display: flex;
@@ -1239,12 +1272,12 @@ body::before {
 .deadline-alert {
     background: linear-gradient(135deg, rgba(255, 107, 53, 0.15), rgba(247, 37, 133, 0.15));
     border: 2px solid #ff6b35;
-    border-radius: 12px;
-    padding: 18px 24px;
-    margin: 25px 0;
+    border-radius: 10px;
+    padding: 14px 20px;
+    margin: 20px 0;
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
     box-shadow: 0 10px 40px rgba(255, 107, 53, 0.3),
                 0 0 60px rgba(247, 37, 133, 0.2);
     animation: fadeInUp 1s 4.2s forwards, deadlinePulse 2s ease-in-out infinite;
@@ -1285,7 +1318,7 @@ body::before {
 }
 
 .deadline-icon {
-    font-size: 36px;
+    font-size: 30px;
     flex-shrink: 0;
     animation: bounce 1s infinite;
 }
@@ -1300,18 +1333,18 @@ body::before {
 }
 
 .deadline-title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: #ff6b35;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .deadline-text {
-    font-size: 16px;
+    font-size: 15px;
     color: var(--text-primary);
-    margin-bottom: 4px;
+    margin-bottom: 3px;
     line-height: 1.6;
 }
 
