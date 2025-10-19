@@ -55,6 +55,160 @@ function initCountdown() {
     }, 1000);
 }
 
+/* DIWALI-START: Temporary Diwali JS (remove this block to disable Diwali modal) */
+(function(){
+    // Show Diwali modal after launch-screen is hidden or after a fallback timeout
+    function showDiwaliModal(){
+        const modal = document.getElementById('diwali-modal');
+        if(!modal) return;
+        modal.setAttribute('aria-hidden', 'false');
+
+        // create a couple of small rockets that fly up for a festive effect
+        for(let i=0;i<3;i++){
+            const r = document.createElement('div');
+            r.className = 'diwali-rocket';
+            r.style.right = (10 + i*12) + '%';
+            r.style.top = (70 + i*6) + '%';
+            r.style.background = 'linear-gradient(180deg,#ff8a65,#ff6b35)';
+            r.style.borderRadius = '6px';
+            document.body.appendChild(r);
+            // remove after animation
+            setTimeout(()=> r.remove(), 1800 + i*200);
+        }
+    }
+
+    function hideDiwaliModal(){
+        const modal = document.getElementById('diwali-modal');
+        if(!modal) return;
+        modal.setAttribute('aria-hidden','true');
+    }
+
+    // Try to detect when launch-screen is removed
+    const launchScreen = document.getElementById('launch-screen');
+    if(launchScreen){
+        // Observe display change using MutationObserver on body children
+        const observer = new MutationObserver((mutations)=>{
+            for(const m of mutations){
+                if(m.type === 'childList'){
+                    // if launch screen removed
+                    if(!document.body.contains(launchScreen)){
+                        setTimeout(showDiwaliModal, 400); // small delay
+                        observer.disconnect();
+                        break;
+                    }
+                }
+            }
+        });
+        observer.observe(document.body, { childList:true, subtree:false });
+    }
+
+    // fallback: ensure it shows after 4.2s if observer didn't trigger
+    setTimeout(()=>{
+        const modal = document.getElementById('diwali-modal');
+        if(modal && modal.getAttribute('aria-hidden') !== 'false'){
+            showDiwaliModal();
+        }
+    }, 4200);
+
+    // Hook up OK button
+    document.addEventListener('click', (e)=>{
+        if(e.target && e.target.id === 'diwali-ok'){
+            hideDiwaliModal();
+        }
+    });
+
+    // Create realistic fireworks bursts in hero section
+    function createFireworks(){
+        const heroSection = document.querySelector('.hero-section');
+        if(!heroSection) return;
+
+        // Create firework container if not exists
+        let container = document.querySelector('.firework-container');
+        if(!container){
+            container = document.createElement('div');
+            container.className = 'firework-container';
+            document.body.appendChild(container);
+        }
+
+        function launchFirework(){
+            const colors = ['#ff1744', '#ff6b35', '#ffd700', '#00f5d4', '#9b5de5', '#f72585', '#ffed4e', '#ff9500'];
+            const color = colors[Math.floor(Math.random() * colors.length)];
+            
+            // Launch position (bottom random x)
+            const startX = 15 + Math.random() * 70;
+            const startY = 85;
+            
+            // Explosion position (random upper area)
+            const explodeX = 10 + Math.random() * 80;
+            const explodeY = 15 + Math.random() * 50;
+            
+            // Create launch trail
+            const trail = document.createElement('div');
+            trail.className = 'firework-trail';
+            trail.style.left = startX + '%';
+            trail.style.top = startY + '%';
+            trail.style.background = `linear-gradient(to bottom, ${color}, transparent)`;
+            container.appendChild(trail);
+            setTimeout(()=> trail.remove(), 800);
+            
+            // Wait for "launch" then create burst
+            setTimeout(()=>{
+                createBurst(explodeX, explodeY, color);
+            }, 600);
+        }
+        
+        function createBurst(x, y, color){
+            const particleCount = 55 + Math.floor(Math.random() * 30); // Increased from 40+25 to 55+30
+            const burstEl = document.createElement('div');
+            burstEl.style.position = 'absolute';
+            burstEl.style.left = x + '%';
+            burstEl.style.top = y + '%';
+            container.appendChild(burstEl);
+            
+            for(let i=0; i<particleCount; i++){
+                const particle = document.createElement('div');
+                particle.className = 'firework-particle';
+                particle.style.color = color;
+                
+                // Calculate explosion direction
+                const angle = (Math.PI * 2 * i) / particleCount;
+                const distance = 110 + Math.random() * 100; // Increased distance for bigger bursts
+                const dx = Math.cos(angle) * distance;
+                const dy = Math.sin(angle) * distance;
+                
+                particle.style.setProperty('--x', dx + 'px');
+                particle.style.setProperty('--y', dy + 'px');
+                particle.style.animation = `fireworkExplode ${0.8 + Math.random()*0.4}s ease-out forwards`;
+                particle.style.animationDelay = Math.random() * 0.08 + 's';
+                
+                burstEl.appendChild(particle);
+            }
+            
+            setTimeout(()=> burstEl.remove(), 1500);
+        }
+        
+        // Launch fireworks more frequently
+        function scheduledLaunch(){
+            launchFirework();
+            setTimeout(scheduledLaunch, 900 + Math.random() * 600); // Reduced delay from 1200+800 to 900+600
+        }
+        scheduledLaunch();
+        
+        // Launch many more fireworks immediately for higher intensity
+        setTimeout(launchFirework, 150);
+        setTimeout(launchFirework, 400);
+        setTimeout(launchFirework, 650);
+        setTimeout(launchFirework, 900);
+        setTimeout(launchFirework, 1150);
+        setTimeout(launchFirework, 1400);
+        setTimeout(launchFirework, 1650);
+    }
+
+    // Start fireworks after modal is shown or after delay
+    setTimeout(createFireworks, 4500);
+})();
+/* DIWALI-END */
+
 // ===========================
 // Rocket Launch Sequence
 // ===========================
